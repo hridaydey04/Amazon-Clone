@@ -1,0 +1,694 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* ✅ fixed */
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white; /* text inside navbar is white */
+    gap: 25px;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 150px;
+}
+
+.logo {
+    background-image: url(White-Amazon-Logo-PNG-HD-Quality.png);
+    background-size: cover;
+    height: 50px;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 25px;
+}
+
+.add-second {
+    color: white;
+    font-size: 1rem;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* box 3: Search Bar */
+.nav-search {
+    display: flex;
+    height: 40px;
+    width: 800px;
+    border: 2px solid transparent; /* reserve border space */
+    border-radius: 6px;
+    overflow: hidden; /* keeps children inside the rounded corners */
+}
+
+.search-select {
+    height: 100%;
+    width: 45px;
+    background-color: #e6e6e6;
+    text-align: center;
+    border: none;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding-left: 8px;
+    font-size: 1rem;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-icon {
+    display: flex;
+    width: 45px;
+    background-color: rgba(255, 183, 0, 0.934);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Focus effect like Amazon */
+.nav-search:focus-within {
+    border: 2px solid orange;
+    box-shadow: 0 0 5px orange;
+}
+
+    /* Box-4 */
+/* language wala div */
+.language
+{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.select-lang
+{
+    background-color: #0f1111;
+    color: white;
+    border: 2px solid transparent;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.select-lang:focus {
+    outline: none; /* removes browser's blue/white glow */
+}
+
+
+/* box-5 */
+/* Sign-in and return wala div */
+
+span
+{
+    font-size: 0.7rem;
+}
+
+.bold
+{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* box-6 */
+/* Cart wala div */
+.cart
+{
+    height:40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.cart i{
+    font-size: 1.5rem;
+}
+
+/* Second Nav: Rectangle 2 */
+
+/* box-1 */
+
+.second-nav
+{
+    height: 39px;
+    background-color: #232e3f;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 0px 0px 11px;
+    font-size: 0.9rem;
+}
+
+.menu
+{
+    padding: 8px 9px 8px 9px;
+    font-weight: 700px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    
+}
+
+.menu i
+{
+    font-size: 1.2rem;
+}
+
+/* box-2 */
+/* anchor tags wala div */
+
+.services
+{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ height: 100%; 
+ padding-right: 20px; 
+}
+
+
+.services-left
+{
+    display: flex;
+    height: 100%;
+}
+.services-left a, .services-right a
+{
+    text-decoration: none;
+    padding: 8px 8px 8px 8px;
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Hero Section */ 
+
+.hero-section
+{
+    height: 400px;
+    background-image: url(amazon\ background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* hero-section ka andar ka text */
+
+.text-hero
+{
+    display: flex;
+    height: 40px;
+    width: 95%;
+    background-color: #f3f4f5;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* click here to go to amazon.in */
+
+.text-hero a
+{
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* shop section */
+
+.shop-section
+{
+    /* padding-top: 20px;  */
+    display: flex;
+    justify-content: space-evenly;
+    height: 880px;
+    background-color: rgb(240, 216, 173);
+    flex-wrap: wrap;
+
+    /* rgb(241, 173, 48) */
+}
+.shop-section p
+{
+    margin-top: 2px;
+}
+
+.box
+{
+    height: 400px;
+    width: 23%;
+    background-color: #fefeff;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom:15px ;
+    font-size: .9rem;
+}
+
+/* box1 this box image type 1*/
+.img-type1
+{
+    
+    background-size: cover;
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box3 .image-1
+{
+    background-image: url(gaming-pc.jpg);
+    cursor: pointer;
+}
+
+
+.See-more
+{
+    text-decoration: none;
+    color: blue;
+    font-size: 0.85rem;
+}
+
+.box-content
+{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* box image type 2 */
+
+.box-img-type2
+{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.type2{
+
+    height: 130px;
+    width: 48%;
+    /* border: 2px solid black; */
+}
+
+.type2 p
+{
+    font-size: 0.8rem;
+    color: #3c4040;
+    font-weight: 550;
+}
+
+.img
+{
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* box-5 images */
+.image-1
+{
+    background-image: url(box1-a.jpg);
+}
+
+.image-2
+{
+    background-image: url(box1-b.jpg);
+}
+
+.image-3
+{
+    background-image: url(box1-c.jpg);
+}
+
+.image-4
+{
+    background-image: url(box1-d.jpg);
+}
+
+/* box 2 images */
+
+.box2 .image-1
+{
+    background-image: url(box2-a.jpg);
+}
+
+.box2 .image-2
+{
+    background-image: url(box2-b.jpg);
+}
+
+.box2 .image-3
+{
+    background-image: url(box2-c.jpg);
+}
+
+.box2 .image-4
+{
+    background-image: url(box2-d.jpg);
+}
+
+/* box 4 images */
+
+.box4 .image-1
+{
+    background-image: url(box4-a.jpg);
+}
+
+.box4 .image-2
+{
+    background-image: url(box4-b.jpg);
+}
+
+.box4 .image-3
+{
+    background-image: url(box4-c.jpg);
+}
+
+.box4 .image-4
+{
+    background-image: url(box4-d.jpg);
+}
+
+.box5 .image-1
+{
+    background-image: url(box5-a.jpg);
+}
+
+.box5 .image-2
+{
+    background-image: url(box5-b.jpg);
+}
+
+.box5 .image-3
+{
+    background-image: url(box5-c.jpg);
+}
+
+.box5 .image-4
+{
+    background-image: url(box5-d.jpg);
+}
+
+
+/* box 6 images */
+
+.box6 .image-1
+{
+    background-image: url(box6-a.jpg);
+}
+
+.box6 .image-2
+{
+    background-image: url(box6-b.jpg);
+}
+
+.box6 .image-3
+{
+    background-image: url(box6-c.jpg);
+}
+
+.box6 .image-4
+{
+    background-image: url(box6-d.jpg);
+}
+
+.box7 .image-2
+{
+    cursor: pointer;
+    background-image: url(box7.jpg);
+}
+.box8 .image-1
+{
+    background-image: url(box8-a.jpg);
+}
+
+.box8 .image-2
+{
+    background-image: url(box8-b.jpg);
+}
+
+.box8 .image-3
+{
+    background-image: url(box8-c.jpg);
+}
+
+.box8 .image-4
+{
+    background-image: url(box8d.jpg);
+}
+
+
+/* footer wala div */
+
+.footer-first
+{
+    height: 200px;
+    padding: 0px 20px 0px 20px;
+    border: 1px solid black;
+    margin: 15px 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in
+{
+    height: 150px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in h2, button, p
+{
+    margin-bottom: px;
+}
+
+.sign-in button
+{
+    margin-top: .85rem;
+    margin-bottom: .85rem;
+    padding: 0px 12px 0px 12px;
+    height: 30px;
+    width: 250px;
+    background-color: #fed914;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sign-in button:hover {
+    background-color: #e3c208;
+}
+
+.sign-in p
+{
+    font-size: 0.75rem;
+}
+
+
+
+/* second footer "back to top" wala div */
+
+.footer-second
+{
+    height: 49px;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #37475a;
+}
+
+.footer-second p
+{
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+}
+
+.footer-third
+{
+    height: 400px;
+    background-color: #232e3f;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+
+.footer-box
+{
+    height: 292px;
+    /* border: 2px solid white; */
+    width: 22%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.footer-box h2
+{
+    font-size: 1.05rem;
+    margin: 6px 0px 14px;
+    color: white;
+    
+}
+.footer-box a
+{
+    display: flex;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 0.82rem;
+    color: rgb(245, 240, 240);
+    font-weight: 500;
+}
+.footer-box .SeeMore
+{
+    text-decoration: underline;
+}
+
+.footer-box a:hover
+{
+    text-decoration: underline;
+}
+
+/* footer fourth wala div */
+
+.fourth-image
+{
+    background-image: url(White-Amazon-Logo-PNG-HD-Quality.png);
+    background-size: cover;
+    height: 50px;
+    width: 150px;
+    margin-right: 2rem ;
+    margin-left: 25rem;
+    margin-top: 6px;
+}
+
+.footer-fourth
+{
+    height: 100px;
+    background-color: #202b3b;
+    display: flex;
+    align-items: center;
+}
+
+.fourth-buttons
+{
+    margin-left: 1rem;
+}
+
+.footer-fourth button
+{
+
+    height: 40px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 0.9rem;
+    color: white;
+    margin-right: 1rem;
+    
+}
+
+.footer-fourth select
+{
+    background-color: transparent;
+    font-size: 0.9rem;
+    color: white;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    color: rgb(245, 240, 240) ;
+
+}
+
+.footer-fourth button:hover
+{
+    background-color: #2e3a4b ;
+}
+
+
+/* 5th footer */
+
+.footer-fifth
+{
+    height: 100px;
+    background-color: rgb(18,27,34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.footer-fifth a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+
+.footer-fifth a:hover
+{
+    text-decoration: underline;
+}
+
+.footer-fifth p
+{
+   margin-top: 1.2rem;
+   color: white;
+   font-weight: 500px;
+}
+
+
+
